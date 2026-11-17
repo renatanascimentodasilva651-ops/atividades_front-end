@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <script src="./scripts/index.js" defer></script>
+    <title>@media e localStorage</title>
+</head>
+<body>
+    <header>
+        <h1>@media e localStorage</h1>
+    </header>
+    <main>
+        <section class="caixa">
+            <h2>Layout responsivo</h2>
+            <p>Redimensione a janela do navegador para ver a mudança.</p>
+        </section>
+
+        <section>
+            <h2>Nome salvo</h2>
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome">
+            <button type="button" onclick="salvar()">Salvar</button>
+            <button type="button" onclick="apagar()">Apagar</button>
+            <p id="saudacao"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto para conhecermos @media e localStorage</p>
+    </footer>
+</body>
+</html>

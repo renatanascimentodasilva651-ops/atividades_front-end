@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <script src="./scripts/index.js" defer></script>
+    <title>Cadastro JS</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    <main>
+        <h2>Cadastro</h2>
+        <form id="cadastro" novalidate onsubmit="executar(event)">
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome">
+            <p id="erro-nome" class="oculto"></p>
+
+            <label for="idade">Idade*</label>
+            <input type="number" id="idade">
+            <p id="erro-idade" class="oculto"></p>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email">
+            <p id="erro-email" class="oculto"></p>
+
+            <label for="telefone">Telefone*</label>
+            <input type="tel" id="telefone">
+            <p id="erro-telefone" class="oculto"></p>
+
+            <label for="senha">Senha* (mínimo 6 caracteres)</label>
+            <input type="password" id="senha">
+            <p id="erro-senha" class="oculto"></p>
+
+            <label for="logradouro">Logradouro*</label>
+            <input type="text" id="logradouro">
+            <p id="erro-logradouro" class="oculto"></p>
+
+            <label for="numero">Número*</label>
+            <input type="number" id="numero">
+            <p id="erro-numero" class="oculto"></p>
+
+            <label for="cidade">Cidade-UF*</label>
+            <input type="text" id="cidade">
+            <p id="erro-cidade" class="oculto"></p>
+
+            <p>Nível pretendido*</p>
+            <label><input type="radio" name="nivel" value="estagiario"> Estagiário</label>
+            <label><input type="radio" name="nivel" value="junior"> Júnior</label>
+            <p id="erro-nivel" class="oculto"></p>
+
+            <p>Tecnologias* (escolha ao menos uma)</p>
+            <label><input type="checkbox" name="tecnologia" value="html"> HTML</label>
+            <label><input type="checkbox" name="tecnologia" value="css"> CSS</label>
+            <label><input type="checkbox" name="tecnologia" value="js"> JavaScript</label>
+            <p id="erro-tecnologia" class="oculto"></p>
+
+            <label for="escolaridade">Escolaridade*</label>
+            <select id="escolaridade">
+                <option value="">Selecione...</option>
+                <option value="medio">Ensino Médio</option>
+                <option value="graduacao">Graduação</option>
+                <option value="pos">Pós-Graduação</option>
+            </select>
+            <p id="erro-escolaridade" class="oculto"></p>
+
+            <label for="biografia">Fale sobre você*</label>
+            <textarea id="biografia" rows="6"></textarea>
+            <p id="erro-biografia" class="oculto"></p>
+
+            <label>
+                <input type="checkbox" id="termos">
+                Li e aceito os termos
+            </label>
+            <p id="erro-termos" class="oculto"></p>
+
+            <button type="submit">Enviar</button>
+            <p id="concluido" class="oculto"></p>
+        </form>
+    </main>
+    <footer>
+        <p>Projeto para conhecermos JavaScript</p>
+    </footer>
+</body>
+</html>
